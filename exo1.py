@@ -16,7 +16,7 @@ while True:
     question = input(f" Combien de notes veux-tu entrer ? ")
 
     # isdigit()
-    # Vérifie que c'est un nombre et obliger à taper un chiggre et pas une lettre au autre caractères
+    # Vérifie que c'est un nombre et obliger à taper un chiffre et pas une lettre au autre caractères
     if question.isdigit():
         question = int(question)
         if 0 < question <= 10:  # if question > 0 and question <= 10:
