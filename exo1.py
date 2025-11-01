@@ -13,7 +13,7 @@ Tant que l'utlisateur tape un chiffre la boucle for peut s'excécuter:
 notes = []
 
 while True:
-    question = input(f" Combien de notes veux-tu entrer ? ")
+    question: str = input(f" Combien de notes veux-tu entrer ? ")
 
     # isdigit()
     # Vérifie que c'est un nombre et obliger à taper un chiffre et pas une lettre au autre caractères
