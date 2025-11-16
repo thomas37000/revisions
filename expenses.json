@@ -1,0 +1,86 @@
+[
+    {
+        "id": "1",
+        "date": "2025-11-07",
+        "categorie": "transport",
+        "montant": "2.50",
+        "description": "ticket de bus"
+    },
+    {
+        "id": "2",
+        "date": "2025-06-08",
+        "categorie": "alimentation",
+        "montant": "45.12",
+        "description": "courses Monoprix"
+    },
+    {
+        "id": "3",
+        "date": "2025-04-06",
+        "categorie": "loisirs",
+        "montant": "699.99",
+        "description": "Achat PS5"
+    },
+    {
+        "id": "4",
+        "date": "2023-02-03",
+        "categorie": "autre",
+        "montant": "35.03",
+        "description": "TEST"
+    },
+    {
+        "id": "5",
+        "date": "2019-02-02",
+        "categorie": "transport",
+        "montant": "300.50",
+        "description": "Achat billet pour Hawïa"
+    },
+    {
+        "id": "6",
+        "date": "2025-09-09",
+        "categorie": "alimentation",
+        "montant": "40.31",
+        "description": "courses Carrefour"
+    },
+    {
+        "id": "7",
+        "date": "2025-05-23",
+        "categorie": "loisirs",
+        "montant": "60",
+        "description": "Achat 2° Manette PS5"
+    },
+    {
+        "id": "8",
+        "date": "2022-01-10",
+        "categorie": "autre",
+        "montant": "35.03",
+        "description": "TEST autre"
+    },
+    {
+        "id": "9",
+        "date": "2024-01-01",
+        "categorie": "transport",
+        "montant": "30.20",
+        "description": "Achat billet SNCF"
+    },
+    {
+        "id": "10",
+        "date": "2025-11-08",
+        "categorie": "alimentation",
+        "montant": "38.86",
+        "description": "courses Lidl"
+    },
+    {
+        "id": "11",
+        "date": "2025-10-06",
+        "categorie": "loisirs",
+        "montant": "79.99",
+        "description": "Achat jeux PS5"
+    },
+    {
+        "id": "12",
+        "date": "2021-12-13",
+        "categorie": "autre",
+        "montant": "35.03",
+        "description": "ça marche!"
+    }
+]

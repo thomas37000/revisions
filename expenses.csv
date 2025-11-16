@@ -1,0 +1,17 @@
+id,date,categorie,montant,description
+1,2025-11-07,transport,2.50,ticket de bus
+2,2025-06-08,alimentation,45.12,courses Monoprix
+3,2025-04-06,loisirs,699.99,Achat PS5
+4,2023-02-03,autre,35.03,TEST
+5,2019-02-02,transport,300.50,Achat billet pour Hawïa
+6,2025-09-09,alimentation,40.31,courses Carrefour
+7,2025-05-23,loisirs,60,Achat 2° Manette PS5
+8,2022-01-10,autre,35.03,TEST autre
+9,2024-01-01,transport,30.20,Achat billet SNCF
+10,2025-11-08,alimentation,38.86,courses Lidl
+11,2025-10-06,loisirs,79.99,Achat jeux PS5
+12,2021-12-13,autre,35.03,ça marche!
+13,2018-02-23,impôts,360,Impôts à payer
+14,2023-12-24,cadeaux,23,Cadeau d'un CD pour ma soeur
+15,2023-04-04,abonnements,19.99,Abonnement à Netflix
+16,2025-11-11,alimentation,50.90,Achat de 15kg de croquettes pour mon chien
