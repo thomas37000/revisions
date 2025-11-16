@@ -193,7 +193,7 @@ def inventory():
     save_inventory(produits)
 
 
-def load_inventory(filename: str = "inventory.csv") -> List[Dict]:
+def load_inventory(filename: str = "data/inventory.csv") -> List[Dict]:
     """Charge les produits depuis un fichier CSV, s'il existe."""
     if not os.path.exists(filename):
         print("⚠️ Aucun fichier CSV trouvé, démarrage à vide.")
@@ -222,7 +222,7 @@ def load_inventory(filename: str = "inventory.csv") -> List[Dict]:
     return produits
 
 
-def save_inventory(produits: List[Dict], filename: str = "inventory.csv") -> None:
+def save_inventory(produits: List[Dict], filename: str = "data/inventory.csv") -> None:
     """Sauvegarde la liste des produits dans un fichier CSV."""
     with open(filename, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)

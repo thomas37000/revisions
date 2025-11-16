@@ -82,5 +82,40 @@
         "categorie": "autre",
         "montant": "35.03",
         "description": "ça marche!"
+    },
+    {
+        "id": "13",
+        "date": "2018-02-23",
+        "categorie": "impôts",
+        "montant": "360",
+        "description": "Impôts à payer"
+    },
+    {
+        "id": "14",
+        "date": "2023-12-24",
+        "categorie": "cadeaux",
+        "montant": "23",
+        "description": "Cadeau d'un CD pour ma soeur"
+    },
+    {
+        "id": "15",
+        "date": "2023-04-04",
+        "categorie": "abonnements",
+        "montant": "19.99",
+        "description": "Abonnement à Netflix"
+    },
+    {
+        "id": "16",
+        "date": "2025-11-11",
+        "categorie": "alimentation",
+        "montant": "50.90",
+        "description": "Achat de 15kg de croquettes pour mon chien"
+    },
+    {
+        "id": 17,
+        "date": "2025-11-04",
+        "categorie": "alimentation",
+        "montant": "48.28",
+        "description": "Courses de la semaine"
     }
 ]

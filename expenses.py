@@ -11,7 +11,7 @@ from utils.validate_date import validate_date
 
 
 # ---- Charge les dépenses depuis expenses.csv à chaque fois que le programme démarre l'app ----
-def load_expenses(filename: str = "expenses.csv") -> List[Dict]:
+def load_expenses(filename: str = "data/expenses.csv") -> List[Dict]:
     if not os.path.exists(filename):
         print("⚠️ Aucun fichier CSV trouvé, démarrage à vide.")
         return []
@@ -38,7 +38,7 @@ def load_expenses(filename: str = "expenses.csv") -> List[Dict]:
 
 
 # ---- Sauvegarde la liste des dépenses dans expenses.json quand on quitte l'app ----
-def save_json(expenses: List[Dict], filename: str = "expenses.json") -> None:
+def save_json(expenses: List[Dict], filename: str = "data/expenses.json") -> None:
 
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(
@@ -52,7 +52,7 @@ def save_json(expenses: List[Dict], filename: str = "expenses.json") -> None:
 
 
 # ---- Sauvegarde la liste des dépenses dans expenses.csv quand on quitte l'app ----
-def save_expenses(expenses: List[Dict], filename: str = "expenses.csv") -> None:
+def save_expenses(expenses: List[Dict], filename: str = "data/expenses.csv") -> None:
 
     with open(filename, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)

@@ -234,7 +234,7 @@ def contacts():
     save_contacts(contacts)
 
 
-def load_contacts(filename: str = "contacts.csv") -> List[Dict]:
+def load_contacts(filename: str = "data/contacts.csv") -> List[Dict]:
     """Charge les contacts depuis un fichier CSV, s'il existe."""
     if not os.path.exists(filename):
         print("⚠️ Aucun fichier CSV trouvé, démarrage à vide.")
@@ -263,7 +263,7 @@ def load_contacts(filename: str = "contacts.csv") -> List[Dict]:
     return contacts
 
 
-def save_contacts(contacts: List[Dict], filename: str = "contacts.csv") -> None:
+def save_contacts(contacts: List[Dict], filename: str = "data/contacts.csv") -> None:
     """Sauvegarde la liste des contacts dans un fichier CSV."""
     with open(filename, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)

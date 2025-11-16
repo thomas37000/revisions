@@ -61,7 +61,7 @@ def collect_student_notes() -> List[float]:
 def compute_stats(notes: List[float]) -> Tuple[float, float, float, float]:
     """Retourne (somme, moyenne, min, max)."""
     total = sum(notes)
-    moyenne = total / len(notes)
+    moyenne = round(total / len(notes), 2) # arrondir à 2 chiffres après la virgule
     return total, moyenne, min(notes), max(notes)
 
 
@@ -90,7 +90,7 @@ def display_summary(etudiants: List[Dict]):
 
 # ---- 7. Fonction principale ----
 def students():
-   # nb_etudiants = collect_number_of_students()
+    # nb_etudiants = collect_number_of_students()
     etudiants = []
 
     etudiants = load_from_csv()  # ← charge les anciens
@@ -150,7 +150,7 @@ def students():
 
 
 # ---- 8. CSV ----
-def save_to_csv(etudiants: List[Dict], filename: str = "students.csv") -> None:
+def save_to_csv(etudiants: List[Dict], filename: str = "data/students.csv") -> None:
     """Sauvegarde la liste d'étudiants dans un fichier CSV."""
     with open(filename, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
@@ -163,7 +163,7 @@ def save_to_csv(etudiants: List[Dict], filename: str = "students.csv") -> None:
     print(f"💾 Données sauvegardées dans {filename}")
 
 
-def load_from_csv(filename: str = "students.csv") -> List[Dict]:
+def load_from_csv(filename: str = "data/students.csv") -> List[Dict]:
     """Charge les étudiants depuis un fichier CSV, s'il existe."""
     if not os.path.exists(filename):
         print("⚠️ Aucun fichier CSV trouvé, démarrage à vide.")

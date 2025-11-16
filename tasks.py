@@ -4,7 +4,7 @@ from typing import List, Dict
 from utils.ask_continue import ask_continue
 
 
-def load_tasks(filename: str = "tasks.csv") -> List[Dict]:
+def load_tasks(filename: str = "data/tasks.csv") -> List[Dict]:
     """Charge les tasks depuis un fichier CSV, s'il existe."""
     if not os.path.exists(filename):
         print("⚠️ Aucun fichier CSV trouvé, démarrage à vide.")
@@ -31,7 +31,7 @@ def load_tasks(filename: str = "tasks.csv") -> List[Dict]:
     return tasks
 
 
-def save_tasks(tasks: List[Dict], filename: str = "tasks.csv") -> None:
+def save_tasks(tasks: List[Dict], filename: str = "data/tasks.csv") -> None:
     """Sauvegarde la liste des tâches dans un fichier CSV."""
     with open(filename, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)

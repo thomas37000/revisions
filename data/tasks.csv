@@ -1,0 +1,8 @@
+id,titre,description,priorite,statut
+1,Apprendre Python,Faire les exos du jour,haute,en cours
+2,Aller courir,30 minutes,faible,terminée
+3,Dormir & Manger, essentiel,haute, à faire
+4,Courses,pain viande fromage ...,moyenne,à faire
+5,Compta,Faire ma compta,moyenne,à faire
+6,Ranger,Ranger mon appartement,moyenne,à faire
+7,Apprendre Data engineering,"L'ingénierie des données est une approche de l'ingénierie logicielle visant à créer des systèmes de données, permettant la collecte et l'exploitation des données. Ces données sont généralement utilisées pour l'analyse et la science des données, qui font souvent appel à l'apprentissage automatique.",haute,à faire
