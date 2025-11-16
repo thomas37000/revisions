@@ -4,10 +4,10 @@ import json
 from datetime import datetime
 from typing import List, Dict
 from operator import attrgetter, itemgetter
-from matplotlib import pyplot as plt
 from utils.ask_continue import ask_continue
 from utils.delete_item import delete_item
 from utils.validate_date import validate_date
+from graphics.chart_utils import display_graphic
 
 
 # ---- Charge les dépenses depuis expenses.csv à chaque fois que le programme démarre l'app ----
@@ -442,39 +442,6 @@ def update_expense(expenses: List[Dict]):
 # ---- Supprimer une dépense ----
 def delete_expense(expenses: List[Dict]) -> None:
     delete_item(expenses, key="id", display_key="date", item_name="dépense")
-
-
-# ---- Affiche un graphique de statistiques(ex : total par catégorie) ----
-def display_graphic(expenses: List[Dict]) -> None:
-    # création de la liste avant la boucle
-    x_sum = []
-    y_cat = []
-
-    # convertir les catégories en nombres pour SCATTER avec un dict de mapping
-    cat_to_num = {
-        "alimentation": 1,
-        "logement": 2,
-        "transport": 3,
-        "loisirs": 4,
-        "autre": 5,
-        "impôts": 6,
-        "cadeaux": 7,
-        "abonnements": 8,
-    }
-
-    for ex in expenses:
-        x_sum.append(float(ex["montant"]))
-        y_cat.append(cat_to_num[ex["categorie"]])
-
-    plt.scatter(x_sum, y_cat, color="navy")
-    plt.plot(x_sum, y_cat, color="navy")
-
-    plt.title("Dépenses")
-
-    plt.xlabel("x Montants")
-    plt.ylabel("y Catégories")
-
-    plt.show()
 
 
 # ---- Fonction principale chargée depuis main.py ----
