@@ -13,23 +13,29 @@ def display_graphic(expenses: List[Dict]) -> None:
         "alimentation": 1,
         "logement": 2,
         "transport": 3,
-        "loisirs": 4,
-        "autre": 5,
-        "impôts": 6,
+        "santé": 4,
+        "loisirs": 5,
+        "voyages": 6,
         "cadeaux": 7,
-        "abonnements": 8,
+        "vêtements": 8,
+        "éducation": 9,
+        "abonnements": 10,
+        "impôts": 11,
+        "autre": 12,
     }
 
-    for ex in expenses:
-        x_sum.append(float(ex["montant"]))
-        y_cat.append(cat_to_num[ex["categorie"]])
+    x_sum = [float(ex["montant"]) for ex in expenses]
+    y_cat = [cat_to_num[ex["categorie"]] for ex in expenses]
 
-    plt.scatter(x_sum, y_cat, color="navy")
-    plt.plot(x_sum, y_cat, color="navy")
+    plt.figure(figsize=(8, 5))  # largeur et hauteur de la fenêtre
+    plt.scatter(x_sum, y_cat)
 
+    plt.yticks(
+        list(cat_to_num.values()), list(cat_to_num.keys())
+    )  # affiche les points selon le montant et la catégorie
+    plt.xlabel("Montants (€)")
+    plt.ylabel("Catégories")
     plt.title("Dépenses")
-
-    plt.xlabel("x Montants")
-    plt.ylabel("y Catégories")
+    plt.grid(True)  # affiche en vue grille
 
     plt.show()
